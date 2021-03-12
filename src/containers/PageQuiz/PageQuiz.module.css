@@ -1,0 +1,22 @@
+.FinishButton {
+    width: 40%;
+    display: grid;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #20A39E;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.QuizPage {
+    position: relative;
+    top: 204px;
+    display: flex;
+    flex-flow: column;
+    width: 350px;
+    left: 40%;
+}

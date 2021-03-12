@@ -1,0 +1,13 @@
+.Toolbar {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #23001E;
+    justify-content: space-evenly;
+}
+
+.Buttons {
+    position: absolute;
+    right: 0;
+}
