@@ -1,0 +1,32 @@
+.Bar {
+    width: 100px;
+}
+
+.Label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.Correct {
+    background-color: #20A39E;
+}
+
+.Correct:hover {
+    background-color: #33D7D1;
+}
+
+.CorrectLabel {
+    color: #20A39E;
+}
+
+.Incorrect {
+    background-color: #EF5B5B;
+}
+
+.Incorrect:hover {
+    background-color: #F6A2A2;
+}
+
+.IncorrectLabel {
+    color: #EF5B5B;
+}

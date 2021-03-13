@@ -4,10 +4,33 @@
     position: fixed;
     top: 0;
     background-color: #23001E;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    display: flex;
 }
 
-.Buttons {
+.Toolbar .Buttons {
+    display: flex;
     position: absolute;
+    align-self: center;
     right: 0;
+}
+
+.Toolbar .Buttons .Button {
+    text-decoration: none;
+    font-size: 20px;
+    min-width: 90px;
+    color: #EF5B5B;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px #23001E;
+    text-align: center;
+    padding: 10px;
+}
+
+.Toolbar .Buttons .Button:hover {
+    color: #23001E;
+    text-shadow: 2px 2px 0px #EF5B5B;
+}
+
+.FormNewQiuz {
+    left: 40%;
 }

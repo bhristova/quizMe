@@ -1,40 +1,52 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component , useState } from 'react';
 
 import Quiz from '../../components/Quiz/Quiz';
+import FormFinishQuiz from '../../components/Forms/FormFinishQuiz/FormFinishQuiz';
 
 import classes from './PageQuiz.module.css';
 
-import data from '../../assets/data.json';
+import questionsData from '../../assets/data.json';
+import { useHistory } from 'react-router';
 
-class pageQuiz extends Component{
-    state = {
-        data: {
-            rightCount: 0,
-            wrongCount: 0
+const PageQuiz  = ({location, ...rest}) => {
+    const [data, setData] = useState({rightCount: 0, wrongCount: 0});
+    const [finishClicked, setFinishClicked] = useState(false);
+    const history = useHistory();
+
+    const getQuestions = () => {
+        const category = location.data;
+        if (!category) {
+            return [];
         }
-    };
 
-    getQuestions(category) {
-        return data.find(q => q.category === category).questions;
+        return questionsData.find(q => q.category === category).questions;
     }
 
-    collectAnswerData(answer) {
+    const collectAnswerData = answer => {
         if (answer) {
-            const oldRightCount = this.state.data.rightCount;
-            this.setState({data: {...this.state.data, rightCount: oldRightCount + 1}});
+            const oldRightCount = data.rightCount;
+            setData({...data, rightCount: oldRightCount + 1});
         } else {
-            const oldWrongCount = this.state.data.wrongCount;
-            this.setState({data: {...this.state.data, wrongCount: oldWrongCount + 1}});
+            const oldWrongCount = data.wrongCount;
+            setData({...data, wrongCount: oldWrongCount + 1});
         }
     }
 
-    render() {
-        return <div className={classes.QuizPage}>
-            <Quiz questions={this.getQuestions('animals')} collectAnswerData={() => this.collectAnswerData()}/>
-            <Link to={{pathname: '/score', scoreData: this.state.data}} className={classes.FinishButton}>Finish</Link>
-        </div>
+    const onFinishClick = evt => {
+        if (data.rightCount + data.wrongCount < 3) {
+            setFinishClicked(true);
+            return;
+        }
+
+        const path = '/score';
+        history.push(path, data);
     }
+
+    return <div className={classes.QuizPage}>
+        <Quiz questions={getQuestions()} collectAnswerData={(value) => collectAnswerData(value)}/>
+        <button className={classes.FinishButton} onClick={() => onFinishClick()}>Finish</button>
+        {finishClicked && <FormFinishQuiz backdropShow={finishClicked} onCancelClick={() => setFinishClicked(false)} data={data}/>}
+    </div>
 };
 
-export default pageQuiz;
+export default PageQuiz;
