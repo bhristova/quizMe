@@ -1,0 +1,22 @@
+.Chart {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ECECEC;
+    border-radius: 4px;
+    top: 300px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 40%;
+    align-items: end;
+    display: grid;
+    justify-content: center;
+}
+
+.Bars {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 50px;
+    left: 20%;
+}

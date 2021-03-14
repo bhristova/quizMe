@@ -1,0 +1,50 @@
+.Bar {
+    width: 100px;
+    transition: height 1s;
+}
+
+.Label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.Correct {
+    background-color: #20A39E;
+}
+
+.Correct:hover {
+    background-color: #33D7D1;
+}
+
+.CorrectLabel {
+    color: #20A39E;
+}
+
+.Incorrect {
+    background-color: #EF5B5B;
+}
+
+.Incorrect:hover {
+    background-color: #F6A2A2;
+}
+
+.IncorrectLabel {
+    color: #EF5B5B;
+}
+
+.Tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+}
+  
+.Bar:hover .Tooltip {
+    visibility: visible;
+}

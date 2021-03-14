@@ -1,0 +1,38 @@
+.Toolbar {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #23001E;
+    justify-content: space-between;
+    display: flex;
+    z-index: 1;
+}
+
+.Toolbar .Buttons {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    right: 0;
+}
+
+.Toolbar .Buttons .Button {
+    text-decoration: none;
+    font-size: 20px;
+    min-width: 90px;
+    color: #EF5B5B;
+    font-weight: bold;
+    text-shadow: 0 2px 0px #FFBA49;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.Toolbar .Buttons .Button:hover {
+    color: #FFBA49;
+    text-shadow: 0 2px 0px #EF5B5B;
+}
+
+.FormNewQiuz {
+    left: 40%;
+}

@@ -1,0 +1,165 @@
+[
+    {
+        "category": "animals",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What colour is the polar bear?",
+                "answers": [
+                            {"id": 0, "value": "black"},
+                            {"id": 1, "value": "white", "correct": true},
+                            {"id": 2, "value": "brown"},
+                            {"id": 3, "value": "blue"}
+                        ]
+            },
+            {
+                "id": 2,
+                "question": "What is a parrot?",
+                "answers": [
+                            {"id": 0, "value": "mammal"},
+                            {"id": 1, "value": "bird", "correct": true},
+                            {"id": 2, "value": "mushroom"},
+                            {"id": 3, "value": "none of the above"}
+                        ]
+            },
+            {
+                "id": 3,
+                "question": "Which of these animals is not a marsupial?",
+                "answers": [
+                            {"id": 0, "value": "Chinchilla", "correct": true},
+                            {"id": 1, "value": "Koala"},
+                            {"id": 2, "value": "Opossum"},
+                            {"id": 3, "value": "Kangaroo"}
+                        ]
+            },
+            {
+                "id": 4,
+                "question": "The trumpeter swan—North America's largest waterfowl—weighs about how many pounds?",
+                "answers": [
+                            {"id": 0, "value": "10"},
+                            {"id": 1, "value": "30", "correct": true},
+                            {"id": 2, "value": "50"},
+                            {"id": 3, "value": "70"}
+                        ]
+            },
+            {
+                "id": 5,
+                "question": "What is the first thing a caterpillar usually eats after it is born?",
+                "answers": [
+                            {"id": 0, "value": "Its own eggshell", "correct": true},
+                            {"id": 1, "value": "Grass"},
+                            {"id": 2, "value": "Cheerios"},
+                            {"id": 3, "value": "Other bugs"}
+                        ]
+            },
+            {
+                "id": 6,
+                "question": "Which of the following animals is not nocturnal?",
+                "answers": [
+                            {"id": 0, "value": "Sheep", "correct": true},
+                            {"id": 1, "value": "Skunk"},
+                            {"id": 2, "value": "Leopard"},
+                            {"id": 3, "value": "Tiger"}
+                        ]
+            },
+            {
+                "id": 7,
+                "question": "Walruses can eat about how many clams in one day?",
+                "answers": [
+                            {"id": 0, "value": "5000", "correct": true},
+                            {"id": 1, "value": "10000"},
+                            {"id": 2, "value": "12000"},
+                            {"id": 3, "value": "16000"}
+                        ]
+            },
+            {
+                "id": 8,
+                "question": "What is a baby rabbit called?",
+                "answers": [
+                            {"id": 0, "value": "Doe"},
+                            {"id": 1, "value": "Kit", "correct": true},
+                            {"id": 2, "value": "Buck"},
+                            {"id": 3, "value": "Hare"}
+                        ]
+            },
+            {
+                "id": 9,
+                "question": "How many koalas stacked on top of one another does it take to reach the height of a male giraffe—the world's tallest land animal?",
+                "answers": [
+                            {"id": 0, "value": "2"},
+                            {"id": 1, "value": "4"},
+                            {"id": 2, "value": "7", "correct": true},
+                            {"id": 3, "value": "50"}
+                        ]
+            },
+            {
+                "id": 10,
+                "question": "An ant says, \"Danger ahead!\" by doing what?",
+                "answers": [
+                            {"id": 0, "value": "Squealing"},
+                            {"id": 1, "value": "Running toward water"},
+                            {"id": 2, "value": "Rolling on its back"},
+                            {"id": 3, "value": "Oozing chemicals", "correct": true}
+                        ]
+            },
+            {
+                "id": 11,
+                "question": "Which of the following is not a type of penguin?",
+                "answers": [
+                            {"id": 0, "value": "Waterland", "correct": true},
+                            {"id": 1, "value": "Emperor"},
+                            {"id": 2, "value": "Chinstrap"},
+                            {"id": 3, "value": "Macaroni"}
+                        ]
+            }
+        ]
+    },
+    {
+        "category": "sports",
+        "questions": [
+            {
+                "id": 1,
+                "question": "How many players are there in a basketball team?",
+                "answers": [
+                            {"id": 0, "value": "7"},
+                            {"id": 1, "value": "10"},
+                            {"id": 2, "value": "12", "correct": true},
+                            {"id": 3, "value": "14"}
+                        ]
+            },
+            {
+                "id": 2,
+                "question": "How long does a game of hockey last?",
+                "answers": [
+                            {"id": 0, "value": "50"},
+                            {"id": 1, "value": "60"},
+                            {"id": 2, "value": "70", "correct": true},
+                            {"id": 3, "value": "As long as it takes"}
+                        ]
+            }
+        ]
+    }, 
+    {
+        "category": "art",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Which of these famous painters cut their ear off?",
+                "answers": [
+                            {"id": 0, "value": "Picasso"},
+                            {"id": 1, "value": "Rembrandt"},
+                            {"id": 2, "value": "Van Gogh", "correct": true},
+                            {"id": 3, "value": "Monet"}
+                        ]
+            }
+        ]
+    }, 
+    {
+        "category": "history",
+        "questions": []
+    }, 
+    {
+        "category": "technology",
+        "questions": []
+    }
+]

@@ -1,0 +1,38 @@
+.Form {
+    height: 120px;
+    width: 400px;
+    background-color: #ececec;
+    border-radius: 4px;
+    z-index: 2;
+    position: absolute;
+    padding: 10px;
+    top: 20%;
+    display: flex;
+    flex-flow: column;
+}
+
+.Form .Buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Form .Buttons .Button {
+    width: 40%;
+    display: grid;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Form .Buttons .ButtonContinue {
+    background-color: #20A39E;
+}
+
+.Form .Buttons .ButtonCancel {
+    background-color: #EF5B5B;
+}

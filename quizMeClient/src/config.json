@@ -1,0 +1,5 @@
+{
+    "serverAddress": "https://localhost",
+    "port": "44358",
+    "categories": ["sports", "art", "history", "technology", "animals"]
+}
